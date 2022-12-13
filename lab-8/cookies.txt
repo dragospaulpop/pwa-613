@@ -1,0 +1,31 @@
+
+
+HTTP(S) -> protocol stateless
+
+fiecare request care vine de la un client (browser)
+este tratat ca fiind de sine statator, adica serverul
+nu stie ce request-uri au venit inaintea request-ului curent
+
+
+cookies
+json web tokens (jwt)
+
+cookies = fisiere text scrise de browser pe
+device-ul clientului in numele domeniului
+
+
+1.  userul acceseaza pagina de login prin request catre server
+    serverul primeste request-ul si raspunde cu pagina login
+2.  userul introduce user&pass si trimite request catre server
+    serverul verifica user&pass si, daca sunt corecte, raspunde cu un cod
+    clientul (browser) salveaza acel cod intr-un cookie
+3.a cand userul doreste sa acceseze o resursa privata/securizata
+    trimite un request catre server atasand acel cod din cookie
+    serverul primeste request-ul, citeste codul si astfel stie cine este
+    clientul si raspunde corespunzator
+3.b daca serverul nu recunoaste codul sau acesta a expirat
+    nu va raspunde clientului cu resursele private solicitate
+
+
+php va deschide o sesiune specifica fiecarui client autentificat corect
+si va raspunde cu id-ul acelei sesiuni

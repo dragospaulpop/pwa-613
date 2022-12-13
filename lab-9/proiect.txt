@@ -1,0 +1,6 @@
+Proiect, 3 optiuni:
+  1. O aplicatie CRUD (create, read, update, delete) pe o problema, cu atentificare, management de useri etc.
+  2. Licenta - backend web, nu neaparat complet
+  3. Proiect la alta materie rezolvat in php (ex.: algoritmul simplex)
+
+Se poate lucra in echipa de 2.
